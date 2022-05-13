@@ -1,5 +1,5 @@
 import {because, TestUtil} from 'systelab-components-test/lib/utilities';
-import {GeneralParameters} from '../general-parameters';
+import {GeneralParameters} from './general-parameters';
 
 declare const allure: any;
 
@@ -8,7 +8,7 @@ describe('TC000X_Allure-Validation_e2e', () => {
 	beforeEach(async () => {
 		TestUtil.init('TC000X_Allure-Validation_e2e', 'Goal: The purpose of this test case is to verify the xml file generation',
 			GeneralParameters.appVersion, GeneralParameters.USERNAME);
-		allure.addLabel('actualResults', 'new label inserted from e2e Test Execution...');
+		allure.addLabel('actualResults', 'new label inserted from e2e Test Execution... ');
 	});
 
 	it('Allure-Validation - Trivial action with expected result (pass)', async () => {
